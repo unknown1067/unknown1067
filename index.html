@@ -1,581 +1,235 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=yes" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/index.css" type="text/css" />
-    <link rel="stylesheet" href="css/default.css" type="text/css" />
-    <link rel="stylesheet" href="css/aos.css" type="text/css">
-    <!-- <link rel="stylesheet" href="css/mobile.css" type="text/css"> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index4.css">
+    <link rel="stylesheet" href="css/default.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
 
-    <!-- <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="js/tab.js"></script>
-    <title>COMMA</title>
-    
-    
-  </head>
-  <body>
-    <!-- <a class="skip" href="#wrapper">본문 바로가기</a> -->
+<body>
+         
     <div id="wrapper">
-      <div id="header_wrap">
-        <div class="video_container">
-          <video
-            src="images/main_movie.mp4"
-            id="video"
-            autoplay
-            loop="load"
-            muted
-          ></video>
-        </div>
-
-        <div class="main_left" >
-          <div class="left_con">
-            <div class="head_text">
-              <h2>COMMA CHAIN</h2>
-              <p class="first1">
-                GLOBAL TRANSLATION MESSENGER PLATFORM BASED ON BLOCKCHAIN
-                TECHNOLOGY
-              </p>
-            </div>
-
-            <div class="discrip_text">
-              <p class="first2">
-                COMMA CHAIN은 새로운 패러다임의 글로벌 번역 메신저 플랫폼 환경을
-                제공하여 참여자 모두에게 새로운 경험과 다양한 기회, 새로운
-                수익을 제공하기 위한 프로젝트입니다.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="main_right">
-          <div class="right_con">
+        <!-- <input type="checkbox" id="menuicon">
+        <header>
             <div>
-              <p>WALLET</p>
-              <p>DOWNLOAD</p>
-              <p>APP</p>
+                <ul class="navi">
+                    <li class="logo"><a href="">상단로고영역</a></li>
+                    <li class=""><a href="">메뉴01</a></li>
+                    <li class=""><a href="">메뉴02</a></li>
+                    <li class=""><a href="">메뉴03</a></li>
+                    <li class=""><a href="">메뉴04</a></li>
+                    <li class=""><a href="">메뉴05</a></li>
+                </ul>
+                <label for="menuicon" class="menubtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
             </div>
-
-            <div class="downpp">
-              <div class="test1">
-                <a href=""
-                  ><img src="images/down_web.png" alt="Download Desktop App"
-                /></a>
-              </div>
-
-              <div class="test2">
-                <a href=""
-                  ><img src="images/down_mobile.png" alt="Download Android App"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <header class="gnb">
-          <h1 class="logo">
-            <a href="" title="홈으로">COMMA <span>CHAIN</span></a>
-          </h1>
-
-          <!-- <h2 class="hide">대메뉴</h2> -->
-          <nav>
-            <div class="rnb">
-              <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">WHITEPAPER</a></li>
-                <li><a href="">COMMATALK</a></li>
-                <li><a href="">EXPLORER</a></li>
-                <li>
-                  <a href="https://masterchain.co.kr/" target="_blank"
-                    ><span>MASTERNODE</span></a
-                  >
-                </li>
-                <li>
-                  <a href=""><img src="images/korea.png" alt="KOREA"/></a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="rnb_mobile">
-              <ul class="plz">
-                <li><a class="drop_text1" href="">HOME</a></li>
-                <li><a href="javascript: alert('To Be Update');">WHITEPAPER</a></li>
-                <li><a href="javascript: alert('To Be Update');">COMMATALK</a></li>
-                <li><a href="javascript: alert('To Be Update');">EXPLORER</a></li>
-                <li><a class="drop_text1" href="javascript: alert('To Be Update');">LOGIN</a></li>
-                <li><a class="drop_text1" href="javascript: alert('To Be Update');">SIGN UP</a></li>
-                <li>
-                  <a href=""><img src="images/korea2.png" alt="KOREA"/></a>
-                  <a href=""><img src="images/eng2.png" alt="ENG"/></a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="menu_toggle">
-              <div class="hamburger"></div>
-            </div>
-            <script>
-              $(".menu_toggle").on('click', function(e) {
-                $(".plz").toggleClass("plz--open", 500);
-                $(this).toggleClass('open');
-              });
-            </script>
-
-            <!-- <div class="spot">
-                        <h2 class="hide">부가서비스</h2>
-                    
-                        <ul>
-                            <li class="first"><a href="">LOGIN</a></li>
-                            <li><a href="">SIGNUP</a></li>                  
-                            <li><a href=""><img src="images/" title="한국어" alt="KOR"></a></li>
-                            <li><a href=""><img src="images/" title="영어" alt="ENG"></a></li>
-                            <li><a href=""><img src="images/" titlle="일본어" alt="JAP"></a></li>
-                            
-                        </ul>
-                    </div>     -->
-          </nav>
         </header>
 
-        <!-- <div class="videocon_wrap">
-                <div class="main_left">
-                    <div class="left_con">
-                        <div class="head_text">
-                            <h2>COMMA CHAIN</h2>
-                            <p class="first1">GLOBAL TRANSLATION MESSENGER PLATFORM BASED</p>
-                            <p>ON BLOCKCHAIN TECHNOLOGY</p>
-                        </div>
-                        
-                        <div class="discrip_text">
-                            <p class="first2">COMMA CHAIN은 새로운 패러다임의 글로벌 번역 메신저 플랫폼 환경을 제공하여</p>
-                            <p>참여자 모두에게 새로운 경험과 다양한 기회, 새로운 수익을 제공하기 위한 프로젝트입니다.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div class="main_right">
-                    <div class="right_con">
-                        <div>
-                            <p>WALLET</p>
-                            <p>DOWNLOAD</p>
-                            <p>APP</p>
-                        </div>
-
-                        <div>
-                        
-                            <div class="test1">
-                            <figure>
-                                    <a href=""><img src="" alt=""></a>
-                                    <figcaption>Download <br/>
-                                                Desktop App
-                                    </figcaption>      
-                                </figure>    
-                            </div>    
-                            
-                            <div class="test2">                                
-                                    <figure>
-                                    <a href=""><img src="" alt=""></a>
-                                    <figcaption>Download <br/>
-                                                Adroid App
-                                    </figcaption>      
-                                </figure>    
-                            </div>
-        
-                            
-                        </div>
-
-                    </div>
-                </div>
-            </div> -->
-      </div>
-
-      <div id="content_wrap">
-        <div class="sectionwrap">
-          <section class="video_reference">
-            <div class="video_top">
-              <h2 data-aos="fade-up">COMMA BLOCKCHAIN</h2>
-              <p>
-                OFFERS A NEW PARADIGM, GLOBAL TRANSLATION MESSAGER PLATFORM
-                EXPERENCE.
-              </p>
-            </div>
-            <div class="iframe_container">
-              <iframe
-                width="1108px"
-                height="513px"
-                src="https://www.youtube.com/embed/SSo_EIwHSd4"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                data-aos="zoom-out-down"
-              ></iframe>
-            </div>
-           </section>
-           
-        </div>
-
-        <section class="logic">
-          <div class="logic_top">
-            <h2 data-aos="fade-up">CORE TECHNOLOGY</h2>
-            <p class="p_first">
-              COMMA 코인 생태계는 독립적으로 구축된 블록체인메인넷 네트워크를
-              기반으로 합니다. 주요 레이어는 다음과 같이 구성되어 있으며,
-            </p>
-            <p>
-              CORE 시스템을 기반으로 내부거래소와 토큰서버에서 데이터를 관리하며
-              WEBAPPLICATION을 통해 통합지갑 및 마스터노드의 서비스를 제공하게
-              됩니다.
-            </p>
-          </div>
-
-          <div class="logic_con_pc">
-            <img src="images/core_bg.png" alt="" />
-          </div>
-
-          <div class="logic_con_mobile">
-            <img src="images/core_bg_m.png" alt="" />
-          </div>
-          <!-- <div class="bg3">
-                        <div class="bg2">
-                            <div class="bg1"></div>
-                        </div>
-                    </div>
-
-                    <div class="logic_con1">
-                        <div class="in_box">
-                            <ul>
-                                <li class="text_h">WEB APPLICATION</li>
-                                <li class="dashed"></li>
-                                <li class="text_sub">
-                                    <p class="ttt">CORE WALLET</p>    
-                                    <P>MASTERNODE SERVICE </P>
-                                    <P>READ DATABASE </P>
-                                    
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="bg_icon1">
-                            
-                        </div>
-                    </div>
-
-                    <div class="logic_con2">
-                            <div class="in_box">
-                                <ul>
-                                    <li class="text_h">INTERNAL EXCHANGE</li>
-                                    <li class="dashed"></li>
-                                    <li class="text_sub">
-                                        <p>COIN / TOKEN EXCHANGE</p>  
-                                    </li>
-        
-                                </ul>
-                            </div>
-                            <div class="bg_icon2">
-                                
-                            </div>
-                    </div>
-
-                    <div class="logic_con3">
-                            <div class="in_box">
-                                <ul>
-                                    <li class="text_sub">
-                                        <p>TOKEN DATABASE</p>  
-                                    </li>
-                                    <li class="dashed"></li>
-                                    <li class="text_h">TOKEN SERVER</li>
-        
-                                </ul>
-                            </div>
-                            <div class="bg_icon3">
-                                
-                            </div>
-                    </div>
-
-
-                    <div class="logic_con4">
-                            <div class="in_box">
-                                <ul>
-                                    <li class="text_sub">
-                                        <p>COIN MANAGEMENT</p>  
-                                        <p>TOKEN MANAGEMENT</p>  
-                                    </li>
-                                    <li class="dashed"></li>
-                                    <li class="text_h">CORE SYSTEM</li>
-        
-                                </ul>
-                            </div>
-                            <div class="bg_icon4">
-                                
-                            </div>
-                    </div> -->
-        </section>
-
-        <div class="sectionwrap_img">
-          <section class="system">
-            <div class="system_pc">
-              <div class="img_container">
-                <div class="" id="sys_tab1">
-                  <h2 data-aos="fade-up">TOKEN ECOSYSTEM</h2>
-                  <p class="p_first">
-                    THE COMMA PLATFORM FORMS RELATIONSHIPS THROUGH SOCIAL
-                    NETWORKS BETWEEN USERS,
-                  </p>
-                  <p class="p_last">
-                    AND PROVIDES CUSTOMIZED CURATION THAT LEVERAGES USER
-                    PREFERENCES AND PATTERNS.
-                  </p>
-
-                  <article class="tabcontent current">
-                    <img src="images/system_tab1.png" alt="" />
-                  </article>
-                </div>
-
-                <div class="" id="sys_tab2">
-                  <h2 data-aos="fade-up">TOKEN FLOW</h2>
-                  <h3>CMC&CMP&PAY</h3>
-                  <p class="p_first">
-                    COMMA CHAIN은 자체 플랫폼 비지니스와 블록체인의 연계를 통한
-                    확장 비지니스 이 두 가지 비지니스를 원활하게 지원하기 위해서
-                    플랫폼 활동에 따른 보상체계와 결제기능을 제공합니다.
-                  </p>
-                  <p class="p_last">
-                    COMMA CHAIN의 토큰 생태계는 생태계의 중추적 역할을 하는
-                    CMC와 서비스에서 보상과 콘텐츠 사용에 필료한 CMP, 외부
-                    제휴사에서 결제기능이 가능한 PAY로 구성되어 있습니다.
-                  </p>
-
-                  <article class="tabcontent current">
-                    <img src="images/system_tab2.png" alt="" />
-                  </article>
-                </div>
-              </div>
-
-              <div class="menu_container">
-                <ul class="tab">
-                  <li class="current" data-tab="sys_tab1">
-                    <a href="#sys_tab1">TOKEN ECOSYSTEM</a>
-                  </li>
-                  <li data-tab="sys_tab2">
-                    <a href="#sys_tab2">TOKEN FLOW</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            
-            <script>
-              $('.menu_container a').on('click', function() {
-                  var idx = $(this).parent().index();
-                  $('.system_pc [id^=sys_tab]').hide();
-                  $('.system_pc [id^=sys_tab]').eq(idx).show();
- 
-              });
-            </script>
-
-            
-
-            <div class="system_mobile">
-              <div class="img_container">
-                <div class="aaa" id="sys_tab1">
-                  <h2 data-aos="fade-up">TOKEN ECOSYSTEM</h2>
-                  <p class="p_first">
-                    THE COMMA PLATFORM FORMS RELATIONSHIPS THROUGH SOCIAL
-                    NETWORKS BETWEEN USERS,
-                  </p>
-                  <p class="p_last">
-                    AND PROVIDES CUSTOMIZED CURATION THAT LEVERAGES USER
-                    PREFERENCES AND PATTERNS.
-                  </p>
-
-                  <article class="tabcontent current">
-                    <img src="images/system_tab1_m.png" alt="" />
-                  </article>
-                </div>
-
-                <div class="bbb" id="sys_tab2">
-                  <h2>TOKEN FLOW</h2>
-                  <h3>CMC & CMP & PAY</h3>
-                  <p class="p_first">
-                    COMMA CHAIN은 자체 플랫폼 비지니스와 블록체인의 연계를 통한
-                    확장 비지니스 이 두 가지 비지니스를 원활하게 지원하기 위해서
-                    플랫폼 활동에 따른 보상체계와 결제기능을 제공합니다.
-                  </p>
-                  <p class="p_last">
-                    COMMA CHAIN의 토큰 생태계는 생태계의 중추적 역할을 하는
-                    CMC와 서비스에서 보상과 콘텐츠 사용에 필료한 CMP, 외부
-                    제휴사에서 결제기능이 가능한 PAY로 구성되어 있습니다.
-                  </p>
-
-                  <article class="tabcontent current">
-                    <img src="images/system_tab2_m.png" alt="" />
-                  </article>
-                </div>
-              </div>
-
-              <div class="menu_container">
-                <ul class="tab">
-                  <li class="current" data-tab="sys_tab1">
-                    <a href="#sys_tab1">TOKEN ECOSYSTEM</a>
-                  </li>
-                  <li data-tab="sys_tab2">
-                    <a href="#sys_tab2">TOKEN FLOW</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <script>
-                $('.system_mobile .menu_container a').on('click', function() {
-                    var idx = $(this).parent().index();
-                    $('.system_mobile [id^=sys_tab]').hide();
-                    $('.system_mobile [id^=sys_tab]').eq(idx).show();
-
-                });
-            </script>
-          </section>
-        </div>
-
-        <section class="service">
-          <div class="sermenu_container">
-            <h2 data-aos="fade-up">SERVICE</h2>
-            <ul>
-              <li>
-                <a href="#ser_tab1" title="">COMMA MESSENGER SERVICE&#40;MIM&#41;</a>
-              </li>
-              <li><a href="#ser_tab2" title="">COMMA AD SERVICE</a></li>
-              <li><a href="#ser_tab3" title="">CMPAY SERVICE</a></li>
-            </ul>
-          </div>
-
-          <div class="article_container">
-            <div id="ser_tab1">
-              <img src="images/service_tab1.png" alt="" />
+        <div class="container">
+            <div class="contents">
+                <span class="area_desc">CONTENT영역</span>
             </div>
 
-            <div id="ser_tab2">
-              <img src="images/service_tab2.png" alt="" />
-            </div>
-
-            <div id="ser_tab3">
-              <img src="images/service_tab3.png" alt="" />
-            </div>
-
-            <script>
-              $(".service .sermenu_container a").on("click", function() {
-                  var idx = $(this).parent().index();
-                  $('.article_container > div').find('img').hide();
-                  $('.article_container > div').eq(idx).find('img').show();
-              });
-            </script>
-
-            <!-- <article id="ser_tab1">
-                            <div>
-                                <h3>블록체인 기술 기반 암호화된 글로벌 메신저</h3>
-                                <div class="service_icon1"></div>
-                                <ul>
-                                    <li>탈중앙화방식으로 데이터에 대한 높은 보안성 유지P2P방식,</li>
-                                    <li>CLIENT방식, SERVER방식으로 사용자가 채팅방의 옵션 직접 설정</br>
-                                        (채팅 목적에 맞춰 채팅 방식을 스스로 결정)
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3>전세계 유저들과 다양한 이슈에 대하여 자유롭게 소통하는 글로벌 이슈 토론방</h3>
-                                <div class="service_icon2"></div>
-                                <ul>
-                                    <li>누구나 참여 가능한 토론방을 개설 할 수 있으며, 토론방 참여 및 기여도에 따라 &lsquo;CMPAY&rsquo;보상</li>
-                                    <li>게임 요소를 추가한 월간&middot;년간 랭킹전을 통해 재미와 게임성 부여</li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3>전세계 사용자와 자동번역 기술을 통해 실시간 대화</h3>
-                                <div class="service_icon3"></div>
-                                <ul>
-                                    <li>103개 언어에 대한 실시간 통&middot;번역 서비스 지원</li>
-                                    <li>채팅방 내에서 다국어 동시 채팅 가능</li>
-                                    <li>1:1 음성 인식 실시간 통역 서비스를 통하여 언어 소통 문제를 해소</li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3>유저를 위한 다양한 편의 기능 제공</h3>
-                                <div class="service_icon4"></div>
-                                <ul>
-                                    <li>ONE CLICK CAMERA 기능: 채팅을 하면서 사진을 찍음과 동시에 채팅창을 통하여 전송</li>
-                                    <li>채팅창을 통한 자유로운 &lsquo;CMPAY&rsquo; 전송 기능</li>
-                                </ul>
-                            </div>
-
-
-                        </article>
-
-                        <article id="ser_tab2">
-
-                        </article>
-
-                        <article id="ser_tab3">
-
-                        </article> -->
-          </div>
-
-          <div class="article_container_mobile">
-            <div id="ser_tab1">
-              <img src="images/service_tab1_m.png" alt="" />
-            </div>
-
-            <div id="ser_tab2">
-              <img src="images/service_tab2_m.png" alt="" />
-            </div>
-
-            <div id="ser_tab3">
-              <img src="images/service_tab3_m.png" alt="" />
-            </div>
-            <script>
-                $(".service .sermenu_container a").on("click", function() {
-                    var idx = $(this).parent().index();
-                    $('.article_container_mobile > div').find('img').hide();
-                    $('.article_container_mobile > div').eq(idx).find('img').show();
-                });
-              </script>
-          </div>
-
-        </section>
-
-        <div class="sectionwrap">
-          <section class="roadmap">
             <div>
-              <h2 data-aos="fade-up">ROADMAP</h2>
+                <ul id="uu">
+                    <li>HTML</li>
+                    <li>css</li>
+                    <li id="active">javascript</li>
+                </ul>
             </div>
 
-            <div class="roadmap_img">
-              <img src="images/roadmap_img.png" alt="" />
+            <div class="sidebar">
+                    <span class="area_desc">SIDEBAR영역</span>
             </div>
+        </div> -->
+        <!-- container end! -->
 
-            <div class="roadmap_img_mobile">
-              <img src="images/roadmap_m.png" alt="" />
+        <div class="tab_wrap">
+            <div class="tabs">
+                <ul class="aaa">
+                    <li data-list="tab1" class="list1">Home
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li data-list="tab2" class="list2">Look at
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li data-list="tab3" class="list3">Let me
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li data-list="tab4" class="list4">About
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                </ul> 
             </div>
-          </section>
+            <!-- tabs end! -->
+            
+            <div class="tab_con">
+                <div class="tab_content tab1">
+                    Native code는 때로 Unmanaged code라고 불립니다. 그러니까 관리되는 코드와 관리되지 않는 코드라고 해야겠네요. 하지만 'Managed code는 좋은 것이고 Unmanaged code는 좋지 않은 것이다'는 것은 절대 아닙니다.
+                    전통적으로 우리가 생각하는 프로그래밍은 전부 Native code입니다. Compile을 하게 되면 OS에서 해석가능한 기계어로 바로 번역이 되지요. 이것은 프로그램하는 사람 입장에서 이런 저런 신경을 많이 쓰게 만듭니다.
+                    예를 들어 프로그램 실행시 사용했던 메모리는 프로그램이 끝날 때 잘 확인해서 모두 OS에 반납을 해야하죠. 혹시라도 프로그래머가 잊어 버리고 반납하지 않으면 시스템 에러를 일으킬 것입니다.
+
+                </div>
+                <div class="tab_content tab2">
+                    그래서 생각하게 된 것이 OS에 종속되지 않게 프로그램을 하는 방법은 없을까 하는 것입니다. 이런 시도는 많이 되었지만 아마도 최초로 성공한 예가 Java입니다. Java용 프로그램은 어디서 작성하던 똑 같은 소스를 
+                    사용해서 Java가 실행되는 기계에서는 똑같은 결과를 보여 줍니다. 하나의 소스를 작성하면 아무런 변경없이 Windows, Linux, Mac 에서 바로 실행 가능하게 되는 것이죠.이런 것이 되는 이유는 Java 소스가 컴파일될
+                     때 바로 OS가 이해할 수 있는 바이너리로 변환되는 것이 아니고 일종의 임시 코드(IL, Intermediate Language)로 변환시키는 것입니다. 이 IL 코드는 실제로 OS에서 실행할 수는 없습니다. 
+                     이 IL코드가 실행되기 위해서는 각 OS에 이미 설치되어 있는 JIT(Just In Time) 컴파일러가 OS용 코드로 변환을 해 주어야 합니다. 이 JIT 컴파일러들은 각 OS마다 다르지만 설치만 되어 있다면 IL코드는 어디서나
+                    같은 동작을 하게 됩니다.
+
+                </div>
+                <div class="tab_content tab3">
+                    abcdef</br>
+                    abcdef</br>
+                    abcdef</br>
+                    abcdef</br>
+                    abcdef</br>
+                </div>
+                <div class="tab_content tab4">
+                    bye</br>
+                    bye</br>
+                    bye</br>
+                    bye</br>
+                    bye</br>
+                </div>
+            </div>
+            <!-- tab_con end! -->
+            
+            <div class="regbox">
+                <button id="open_modal1">Click Here! 
+                    <span class="ani_border"></span>
+                    <span class="ani_border"></span>
+                    <span class="ani_border"></span>
+                    <span class="ani_border"></span>
+                </button>
+            </div>
+            
+            <!-- layer popup -->
+            <div class="modal_1 hidden">
+                <div class="modal_overlay">
+                    sadf
+                </div>
+
+                <div class="modal_content">
+                    <div class="modal_close">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    
+                        
+                    <h2>회원가입</h2>
+                    <form action="#" >
+                        <ul class="fff">
+                            <li><label for="user_name"><span>*</span>ID</label> <input type="text" id="user_name" placeholder="아이디 입력"></li>
+                            <li><label for="pw"><span>*</span>PASSWORD</label> <input type="password"  id="pw"placeholder="비밀번호 입력"></li>
+                            <li><label for="pw2"><span>*</span>PASSWORD</label> <input type="password" id="pw2"placeholder="비밀번호 확인"></li>
+                            <li><label for="pw3"><span>*</span>PASSWORD</label> <input type="password" id="pw3"placeholder="비밀번호 확인"></li>
+                            <li><label for="pw4"><span>*</span>PASSWORD</label> <input type="password" id="pw4"placeholder="비밀번호 확인"></li>
+                            <li><label for="pw5"><span>*</span>PASSWORD</label> <input type="password" id="pw5"placeholder="비밀번호 확인"></li>
+                            <li><label for="pw6"><span>*</span>PASSWORD</label> <input type="password" id="pw6"placeholder="비밀번호 확인"></li>
+                            
+                        </ul>
+                        <div class="reg_btn">
+                            <input type="submit" value="가입하기">
+                        </div>    
+                    </form>
+                </div>
+            </div>
+            <!-- layer popup end! #modal_1 -->
+
         </div>
+        <!-- tab_wrap end! #wrapper -->
         
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-            AOS.init({
-                offset:100,
-                duration:700
-            });
-        </script>
-      </div>
+            $(document).ready(function(){
+                // == tab menu ==
+                $('.tab_con .tab_content').hide();
+                $('.tab_con .tab_content:first-child').show();
+                $('.aaa li:first-child').addClass('active');
+                
+                $('.aaa li').click(function(){
+                    $('.aaa li').removeClass("active");
+                    $(this).addClass("active");                                 
+                   
+                    var current_tab_value = $(this).attr('data-list');
+                    $('.tab_con .tab_content').hide();
+                    $('.'+ current_tab_value).show();
+                    
+                    return false;
+                });
 
-      <footer class="foot">
-        <div>
-          <p>Copyright&copy; <b>2018 MYCOMMA corp.</b> All Rights Reserved.</p>
-        </div>  
-      </footer>
+                $('.regbox button').hover(function(){
+                    $('.ani_border').css('display','none');},
+                    function(){
+                        $('.ani_border').css('display','block');
+                });
+
+
+               
+                              
+                // == modal (fade)==
+               $('.reg_btn input').click(function(){
+                    alert("To be continue");
+                    $('.modal_1').fadeOut(700);
+                });             
+
+                $('.regbox button').click(function(){
+                    // $('.modal_1').css('display','flex');  / css:92
+                    // $('.modal_1').show();
+                    $('.modal_1').fadeIn(700);   
+                });
+                
+                $('.modal_close').click(function(){
+                    $('.modal_1').fadeOut(700);
+                });
+                
+                $('.modal_overlay').click(function(){
+                    $('.modal_1').fadeOut(700);
+                }); 
+                 
+                // == modal (event) ==
+                /*const openBtn = document.getElementById('open_modal1');
+                const modal = document.querySelector('.modal_1');
+                const overlay = modal.querySelector('.modal_overlay');
+                const closeBtn = modal.querySelector('.modal_close');
+                const openModal = () =>{
+                    modal.classList.remove('hidden');
+                    
+                }
+                const closeModal = () =>{
+                    modal.classList.add('hidden');
+                } 
+
+                overlay.addEventListener('click', closeModal);
+                closeBtn.addEventListener('click', closeModal);
+                openBtn.addEventListener('click', openModal);
+                */
+                
+
+
+            });
+
+        </script>
     </div>
-  </body>
+    <!-- wrapper end -->
+</body>
 </html>

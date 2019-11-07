@@ -1,6 +1,5 @@
-html, body {width:100%; line-height:100%;}
-html {-webkit-touch-callout:none; -webkit-user-select:none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
-body{width:100%; background-color:#fff; min-width:320px; }
+@charset "utf-8";
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -17,7 +16,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -52,12 +51,10 @@ table {
 
 img, fieldset {border:0;}
 
-a{ text-decoration:none;}
-a:link, a:visited {color:#000; text-decoration:none;}
-
+a{ text-decoration:none; -webkit-transition:.3s all ease;-o-transition:.3s all ease;transition:.3s all ease;}
+a:hover{text-decoration:none;}
+.hidden{margin:0;padding:0;width:0;height:0;font-size:0;line-height:0;text-indent:-9999px;}
 .clear {zoom:1; clear:both;}
 .clearfix:after {content:''; display:block; clear:both;}
 
 footer { text-align:center;}
- 
-

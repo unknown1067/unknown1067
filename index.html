@@ -2,234 +2,103 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>아무거나하는페이지</title>
-    <link rel="stylesheet" href="css/index4.css">
-    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/default.css" type="text/css">
+    <link rel ="stylesheet" href="css/animate.css" />
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+        var is_mobile = 0;
+    </script>
+    <title>COVACELL</title>
 </head>
-
 <body>
-         
     <div id="wrapper">
-        <!-- <input type="checkbox" id="menuicon">
+        <h1 class="hidden">COVACELL</h1>
         <header>
-            <div>
-                <ul class="navi">
-                    <li class="logo"><a href="">상단로고영역</a></li>
-                    <li class=""><a href="">메뉴01</a></li>
-                    <li class=""><a href="">메뉴02</a></li>
-                    <li class=""><a href="">메뉴03</a></li>
-                    <li class=""><a href="">메뉴04</a></li>
-                    <li class=""><a href="">메뉴05</a></li>
-                </ul>
-                <label for="menuicon" class="menubtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
-        </header>
-
-        <div class="container">
-            <div class="contents">
-                <span class="area_desc">CONTENT영역</span>
-            </div>
-
-            <div>
-                <ul id="uu">
-                    <li>HTML</li>
-                    <li>css</li>
-                    <li id="active">javascript</li>
-                </ul>
-            </div>
-
-            <div class="sidebar">
-                    <span class="area_desc">SIDEBAR영역</span>
-            </div>
-        </div> -->
-        <!-- container end! -->
-
-        <div class="tab_wrap">
-            <div class="tabs">
-                <ul class="aaa">
-                    <li data-list="tab1" class="list1">Home
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </li>
-                    <li data-list="tab2" class="list2">Look at
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </li>
-                    <li data-list="tab3" class="list3">Let me
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </li>
-                    <li data-list="tab4" class="list4">About
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </li>
-                </ul> 
-            </div>
-            <!-- tabs end! -->
-            
-            <div class="tab_con">
-                <div class="tab_content tab1">
-                    Native code는 때로 Unmanaged code라고 불립니다. 그러니까 관리되는 코드와 관리되지 않는 코드라고 해야겠네요. 하지만 'Managed code는 좋은 것이고 Unmanaged code는 좋지 않은 것이다'는 것은 절대 아닙니다.
-                    전통적으로 우리가 생각하는 프로그래밍은 전부 Native code입니다. Compile을 하게 되면 OS에서 해석가능한 기계어로 바로 번역이 되지요. 이것은 프로그램하는 사람 입장에서 이런 저런 신경을 많이 쓰게 만듭니다.
-                    예를 들어 프로그램 실행시 사용했던 메모리는 프로그램이 끝날 때 잘 확인해서 모두 OS에 반납을 해야하죠. 혹시라도 프로그래머가 잊어 버리고 반납하지 않으면 시스템 에러를 일으킬 것입니다.
-
-                </div>
-                <div class="tab_content tab2">
-                    그래서 생각하게 된 것이 OS에 종속되지 않게 프로그램을 하는 방법은 없을까 하는 것입니다. 이런 시도는 많이 되었지만 아마도 최초로 성공한 예가 Java입니다. Java용 프로그램은 어디서 작성하던 똑 같은 소스를 
-                    사용해서 Java가 실행되는 기계에서는 똑같은 결과를 보여 줍니다. 하나의 소스를 작성하면 아무런 변경없이 Windows, Linux, Mac 에서 바로 실행 가능하게 되는 것이죠.이런 것이 되는 이유는 Java 소스가 컴파일될
-                     때 바로 OS가 이해할 수 있는 바이너리로 변환되는 것이 아니고 일종의 임시 코드(IL, Intermediate Language)로 변환시키는 것입니다. 이 IL 코드는 실제로 OS에서 실행할 수는 없습니다. 
-                     이 IL코드가 실행되기 위해서는 각 OS에 이미 설치되어 있는 JIT(Just In Time) 컴파일러가 OS용 코드로 변환을 해 주어야 합니다. 이 JIT 컴파일러들은 각 OS마다 다르지만 설치만 되어 있다면 IL코드는 어디서나
-                    같은 동작을 하게 됩니다.
-
-                </div>
-                <div class="tab_content tab3">
-                    abcdef</br>
-                    abcdef</br>
-                    abcdef</br>
-                    abcdef</br>
-                    abcdef</br>
-                </div>
-                <div class="tab_content tab4">
-                    bye</br>
-                    bye</br>
-                    bye</br>
-                    bye</br>
-                    bye</br>
-                </div>
-            </div>
-            <!-- tab_con end! -->
-            
-            <div class="regbox">
-                <button id="open_modal1">Click Here! 
-                    <span class="ani_border"></span>
-                    <span class="ani_border"></span>
-                    <span class="ani_border"></span>
-                    <span class="ani_border"></span>
-                </button>
-            </div>
-            
-            <!-- layer popup -->
-            <div class="modal_1 hidden">
-                <div class="modal_overlay">
-                    sadf
-                </div>
-
-                <div class="modal_content">
-                    <div class="modal_close">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    
+            <div class="gnb_wrap">
+                <h2 class="logo"><a href=""><img src="images/logo.png" alt="COVACELL"></a></h2>
+                <nav class="gnb">
+                    <ul>
+                        <li class="under_bar"><a  href="">회사소개<span></span></a></li>
+                        <li class="under_bar"><a  href="">제품소개<span></span></a></li>
+                        <li class="under_bar"><a  href="">사업소개<span></span></a></li>
+                        <li class="show_lang"><a href=""><span><img src="images/kor.png" alt="한국어" title="한국어"></span><span> ▼</span></a>
+                            <ul class="lang_box">
+                                <li><a href=""><img src="images/kor.png" alt="한국어" title="한국어"></a></li>
+                                <li><a href=""><img src="images/eng.png" alt="영어" title="영어"></a></li>
+                            </ul>
+                        </li>
                         
-                    <h2>회원가입</h2>
-                    <form action="#" >
-                        <ul class="fff">
-                            <li><label for="user_name"><span>*</span>ID</label> <input type="text" id="user_name" placeholder="아이디 입력"></li>
-                            <li><label for="pw"><span>*</span>PASSWORD</label> <input type="password"  id="pw"placeholder="비밀번호 입력"></li>
-                            <li><label for="pw2"><span>*</span>PASSWORD</label> <input type="password" id="pw2"placeholder="비밀번호 확인"></li>
-                            <li><label for="pw3"><span>*</span>PASSWORD</label> <input type="password" id="pw3"placeholder="비밀번호 확인"></li>
-                            <li><label for="pw4"><span>*</span>PASSWORD</label> <input type="password" id="pw4"placeholder="비밀번호 확인"></li>
-                            <li><label for="pw5"><span>*</span>PASSWORD</label> <input type="password" id="pw5"placeholder="비밀번호 확인"></li>
-                            <li><label for="pw6"><span>*</span>PASSWORD</label> <input type="password" id="pw6"placeholder="비밀번호 확인"></li>
-                            
-                        </ul>
-                        <div class="reg_btn">
-                            <input type="submit" value="가입하기">
-                        </div>    
-                    </form>
-                </div>
+                    </ul>
+                    
+                    
+                </nav>
+
+
+                <nav class="gnb_mob">
+                    
+                    <ul class="qqq">
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">제품소개</a></li>
+                        <li><a href="">사업소개</a></li>
+                        <li><a href=""><span><img src="images/kor3.png" alt="한국어" title="한국어"></span><span><img src="images/eng3.png" alt="영어" title="영어"></span></a></li>
+                        
+                    </ul>
+                    <div class="menu_toggle">
+                            <div class=""></div>
+                            <div class=""></div>
+                            <div class=""></div>
+                    </div>
+
+                </nav>               
+
             </div>
-            <!-- layer popup end! #modal_1 -->
-
-        </div>
-        <!-- tab_wrap end! #wrapper -->
+            <!-- gnb bar end! .gnb_wrap-->
+        </header>
         
+        <div class="main_con">
+
+            <div class="main_text wow bounceInDown" data-wow-duration="1.5s">
+                <img src="images/bg_main_fade1.png" alt="">
+            </div>
+            
+        </div>
+        
+        <!-- main end! .mian_con -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>
-            $(document).ready(function(){
-                // == tab menu ==
-                $('.tab_con .tab_content').hide();
-                $('.tab_con .tab_content:first-child').show();
-                $('.aaa li:first-child').addClass('active');
-                
-                $('.aaa li').click(function(){
-                    $('.aaa li').removeClass("active");
-                    $(this).addClass("active");                                 
-                   
-                    var current_tab_value = $(this).attr('data-list');
-                    $('.tab_con .tab_content').hide();
-                    $('.'+ current_tab_value).show();
-                    
-                    return false;
-                });
-
-                $('.regbox button').hover(function(){
-                    $('.ani_border').css('display','none');},
-                    function(){
-                        $('.ani_border').css('display','block');
-                });
-
-
-               
-                              
-                // == modal (fade)==
-               $('.reg_btn input').click(function(){
-                    alert("To be continue");
-                    $('.modal_1').fadeOut(700);
-                });             
-
-                $('.regbox button').click(function(){
-                    // $('.modal_1').css('display','flex');  / css:92
-                    // $('.modal_1').show();
-                    $('.modal_1').fadeIn(700);   
-                });
-                
-                $('.modal_close').click(function(){
-                    $('.modal_1').fadeOut(700);
-                });
-                
-                $('.modal_overlay').click(function(){
-                    $('.modal_1').fadeOut(700);
-                }); 
-                 
-                // == modal (event) ==
-                /*const openBtn = document.getElementById('open_modal1');
-                const modal = document.querySelector('.modal_1');
-                const overlay = modal.querySelector('.modal_overlay');
-                const closeBtn = modal.querySelector('.modal_close');
-                const openModal = () =>{
-                    modal.classList.remove('hidden');
-                    
-                }
-                const closeModal = () =>{
-                    modal.classList.add('hidden');
-                } 
-
-                overlay.addEventListener('click', closeModal);
-                closeBtn.addEventListener('click', closeModal);
-                openBtn.addEventListener('click', openModal);
-                */
-                
-
-
+        $(document).ready(function(){
+            $('.menu_toggle').click(function(){
+                $('.menu_toggle div').addClass("hamburger");
+                $('.gnb_mob ul').addClass("on_toggle");
+                $('.menu_toggle').addClass("close_toggle")
             });
+            
+            /*$('.close_toggle').click(function(){
+                $('.menu_toggle div').removeClass("hamburger");
+                $('.gnb_mob ul').removeClass("on_toggle");
+                $('.menu_toggle').removeClass("close_toggle")
+            });*/
 
-        </script>
+            $('.under_bar:first-child span').addClass('nav_active');
+            
+            // $('.show_lang a').hover(function(){
+            //     $('.lang_box').css('display','block');
+            // }, function(){
+            //     $('.lang_box').css('display','none');
+            //     }
+                
+            // );
+            
+                   
+            
+        });
+        </script>     
     </div>
-    <!-- wrapper end -->
+    <!-- wrapper end ! #wrapper -->
 </body>
 </html>

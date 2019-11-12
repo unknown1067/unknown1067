@@ -73,9 +73,9 @@ header .gnb_wrap .gnb > ul li:last-child span:last-child {margin:0 30px 0 10px; 
 }
 
 @media screen and (max-width:610px) {
-    #wrapper .main_con .main_text img {min-width:440px; }
+    #wrapper .main_con .main_text img {min-width:90%; }
 }
 
-@media screen and (max-width:500px) {
-    #wrapper .main_con .main_text img {min-width:400px; }
-}
+/* @media screen and (max-width:500px) {
+    #wrapper .main_con .main_text img {min-width:94%; }
+} */

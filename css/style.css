@@ -3,7 +3,7 @@
 
 body{width:100%; font-size:16px;}
 
-#wrapper{ width:100%; height:100vh;  max-width:2500px; margin:auto; font-family:'Noto Sans KR', sans-serif;  font-size:1em; color:#2e2e2e; font-weight:400; font-size:100%; font-stretch: 100%; position:relative;}
+#wrapper{ width:100%;   max-width:2500px; margin:0 auto; font-family:'Noto Sans KR', sans-serif;  font-size:1em; color:#2e2e2e; font-weight:400; font-size:100%; font-stretch: 100%; position:relative;}
 
 header .gnb_wrap {width:100%; max-width:2500px; position:fixed; top:0;z-index:5000; background:#fff; box-shadow:0 3px 25px;}
 header .gnb_wrap .logo {float:left; padding:26px 0 26px 52px;}
@@ -13,19 +13,19 @@ header .gnb_wrap .gnb_mob {display:none; }
 header .gnb_wrap .gnb > ul {width:100%;    padding:0px 12.4% 0px 0;  }
 header .gnb_wrap .gnb > ul li {float:left;  vertical-align: middle;}
 header .gnb_wrap .gnb > ul >li:last-child {margin-left:40px; position:relative;}
-header .gnb_wrap .gnb > ul li a {display:inline-block; padding:30px 32px; font-size:14px; font-weight:400; color:#211714; position:relative;}
+header .gnb_wrap .gnb > ul li a {display:inline-block; padding:30px 32px; font-size:14px; font-weight:400; color:#211714; position:relative; }
 header .gnb_wrap .gnb > ul li a:hover {color:#8e4c14; text-decoration:underline; }
 header .gnb_wrap .gnb > ul li:last-child span{ vertical-align:middle; line-height:.2; display:inline-block; }
-header .gnb_wrap .gnb > ul li:last-child > .lang_box {display:none; position:absolute; top:60px; left:20px; clear:both; margin-left:0;  border:1px solid #666; border-radius:5px; background:rgba(0,0,0, .3); padding:0;}
+header .gnb_wrap .gnb > ul li:last-child > .lang_box {display:none; position:absolute; top:60px; left:20px; clear:both; margin-left:0;  border:1px solid #666; border-radius:5px; background:rgba(0,0,0, .2); padding:0;}
 header .gnb_wrap .gnb > ul li:last-child > .lang_box li a {padding:10px; }
 
 
-header .gnb_wrap .gnb > ul li:last-child span:last-child {margin:0 30px 0 10px; font-size:11px;color:#a0a0a0;}
+header .gnb_wrap .gnb > ul li:last-child span:last-child {margin:0 20px 0 10px; font-size:11px;color:#a0a0a0;}
 
 .nav_active {background:#8e4c14; width:50px; height:4px; position:absolute; top:0; left:50%; transform:translateX(-50%);}
 
 
-#wrapper .main_con {  width:100%; height:100vh; max-width:2500px; background:url('../images/bg_main.jpg')  center bottom no-repeat; background-position:50% 0%; display:flex; justify-content:center; align-items: flex-start;  }
+#wrapper .main_con {  width:100%; max-width:2500px; height:100vh; max-height:1080px;  background:url('../images/bg_main.jpg')  center top no-repeat;  display:flex; justify-content:center; align-items: flex-start;  }
 /* #wrapper .main_con .main_text { text-align:center; display:flex; justify-content:center; margin:0 auto;} */
 #wrapper .main_con .main_text { margin-top:325px;  }
 #wrapper .main_con .main_text_m {display:none;}
@@ -37,25 +37,27 @@ header .gnb_wrap .gnb > ul li:last-child span:last-child {margin:0 30px 0 10px; 
     #wrapper .main_con .main_text img {width:100%; min-width:620px;}
 } */
 
+@media screen and (max-width:830px) {
+    header .gnb_wrap .gnb > ul >li:last-child {margin-left:0px; }
+    header .gnb_wrap .gnb_mob > ul li:last-child {margin-top:21.7777vw;}
+}
+
 @media screen and (max-width:768px) {
     
     
     header .gnb_wrap .logo {padding:26px 0 26px 5.5555%; position:fixed; top:0; left:0;}
     header .gnb_wrap .gnb {display:none;}
     header .gnb_wrap .gnb_mob {display:block; height:80px;}
-    
-    
    
     
     header .gnb_wrap .gnb_mob {width:100%; }
     /* header .gnb_wrap .gnb_mob > ul {background:rgba(64,33,7, .9); width:82.78%; padding: 8.61%; position:absolute; top:-1000px;right:0; transition:all ease-in-out 350ms;} */
     header .gnb_wrap .gnb_mob > ul {background:rgba(64,33,7, .9); width:82.78%; padding:13.75vw 8.61%; position:absolute; top:-1000px;right:0; transition:all ease-in-out 350ms;}
     header .gnb_wrap .gnb_mob > ul li {width:100%;}
-    /* header .gnb_wrap .gnb_mob > ul li:last-child {margin-top:236px;} */
-    header .gnb_wrap .gnb_mob > ul li:last-child {margin-top:32.7777vw;}
+    
     header .gnb_wrap .gnb_mob > ul li:last-child span:nth-child(2) {margin:0 0 0 40px;}
     /* header .gnb_wrap .gnb_mob > ul li a {color:#fff; font-size:39px;font-weight:400; padding:29px 0; display:inline-block;width:100%; text-align: left;} */
-    header .gnb_wrap .gnb_mob > ul li a {color:#fff; font-size:5.2083vw; font-weight:400; padding:4.028vw 0; display:inline-block;width:100%; text-align: left;}
+    header .gnb_wrap .gnb_mob > ul li a {color:#fff; font-size:5.2083vw; font-weight:300; padding:4.028vw 0; display:inline-block;width:100%; text-align: left; letter-spacing:1.3px;}
     
 
     /* menu_toggle */
@@ -72,7 +74,7 @@ header .gnb_wrap .gnb > ul li:last-child span:last-child {margin:0 30px 0 10px; 
     header .gnb_wrap .gnb_mob .con_toggle {position:absolute; top:0;}
     
    
-    #wrapper .main_con {width:100%;height:100vh;  background:url('../images/bg_main_m.jpg') center top no-repeat; background-size:110%; display:flex; justify-content: center;  align-items:flex-start; }
+    #wrapper .main_con {width:100%;height:100vh;  background:url('../images/bg_main_m.jpg') center top no-repeat; background-size:100%;  display:flex; justify-content: center;  align-items:flex-start; }
 
     
 
@@ -94,4 +96,11 @@ header .gnb_wrap .gnb > ul li:last-child span:last-child {margin:0 30px 0 10px; 
     header .gnb_wrap .gnb_mob .menu_toggle > div:nth-child(1) {top:25%; left:50%; transform:translateX(-50%);}
     header .gnb_wrap .gnb_mob .menu_toggle > div:nth-child(2) {top:50%; left:50%; transform:translate(-50%, -50%);}
     header .gnb_wrap .gnb_mob .menu_toggle > div:nth-child(3) {bottom:25%; left:50%; transform:translateX(-50%);}
+
+    header .gnb_wrap .gnb_mob > ul {background:rgba(64,33,7, .9); width:82.78%; padding:17.75vw 8.61%; position:absolute; top:-1000px;right:0; transition:all ease-in-out 350ms;}
+    header .gnb_wrap .gnb_mob > ul li:last-child {margin-top:32.7777vw;}
+    header .gnb_wrap .gnb_mob > ul li a {color:#fff; font-size:7.2083vw; font-weight:300; padding:5.028vw 0; display:inline-block;width:100%; text-align: left;}
+    header .gnb_wrap .gnb_mob > ul li:last-child span {display:inline-block; min-width:50px; width:50px; height:50px;}
+    header .gnb_wrap .gnb_mob > ul li:last-child span > img {max-width:100%; height:auto;}
+    header .gnb_wrap .gnb_mob > ul li:last-child span:nth-child(2) {margin:0 0 0 5.2vw;}
 }

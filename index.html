@@ -1,112 +1,244 @@
+
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/default.css" type="text/css">
-    <link rel ="stylesheet" href="css/animate.css" />
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-        var is_mobile = 0;
-    </script>
-    <title>COVACELL</title>
-</head>
-<body>
-    <div id="wrapper">
-        <h1 class="hidden">COVACELL</h1>
-        <header>
-            <div class="gnb_wrap">
-                <h2 class="logo"><a href=""><img src="images/logo.png" alt="COVACELL"></a></h2>
-                <nav class="gnb">
-                    <ul>
-                        <li class="under_bar"><a  href="#javascript void(0)">회사소개<span></span></a></li>
-                        <li class="under_bar"><a  href="#javascript void(0)">제품소개<span></span></a></li>
-                        <li class="under_bar"><a  href="#javascript void(0)">사업소개<span></span></a></li>
-                        <li class="show_lang"><a href="#javascript void(0)"><span><img src="images/kor.png" alt="한국어" title="한국어"></span><span> ▼</span></a>
-                            <ul class="lang_box">
-                                <li><a href=""><img src="images/kor.png" alt="한국어" title="한국어"></a></li>
-                                <li><a href=""><img src="images/eng.png" alt="영어" title="영어"></a></li>
-                            </ul>
-                        </li>
-                        
-                    </ul>
-                    
-                    
-                </nav>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+		<meta name="keywords" content="COMMA" />
+		<title>COMMA</title>
+		<link rel="stylesheet" href="./css/style.css?v=1569468612" />
+		<link rel ="stylesheet" href="./css/animate.min.css" />
+		<script src="./js/jquery-1.8.3.min.js"></script>
+		<script src="./js/nav.js"></script>
+		<script src="./js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+			var is_mobile = 0;
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<div id="header_content">
+					<h1 class="logo"><a href="/"><img src="./images/logo.png" alt="COMMA CHAIN" /></a></h1>
+					<!-- gnb //S-->
+					<div class="gnb">
+						<ul>
+							<li><a href="#movie" class="scroll">HOME</a></li>
+							<li><a href="/lib/COMMA_WHITEPAPER_v1.6_KR.pdf" target="_blank">WHITEPAPER</a></li>
+							<li><a href="./talk" target="_blank">COMMATALK</a></li>
+							<li><a href="http://explorer.commacoin.io/" target="_blank">EXPLORER</a></li>
+							<li class="btn"><a href="https://masterchain.co.kr/" target="_blank"><button type="button">Masternode Hosting</button></a></li>
+							<!--li class="login"><a href="javascript: alert('To Be Update');">LOGIN</a> | <a href="javascript: alert('To Be Update');">SIGN UP</a></li-->
+							<li class="lang"><a href="javascript:void(0);"><span><img src="./images/korea.png" alt=""></span> ▼</a>
+								<ul class="lang_sub">
+									<li><a href="/?lang=ko"><img src="./images/korea.png" alt=""></a></li>
+									<li><a href="/?lang=en"><img src="./images/eng.png" alt=""></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div id="top_right">
+						<div id="menu-icon2" class="all_menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<nav>
+							<ul id="nav">
+								<li><a href="#movie" class="scroll">HOME</a></li>
+								<li><a href="/lib/COMMA_WHITEPAPER_v1.6_KR.pdf" target="_blank">WHITEPAPER</a></li>
+								<li><a href="./talk" target="_blank">COMMATALK</a></li>
+								<li><a href="http://explorer.commacoin.io/" target="_blank">EXPLORER</a></li>
+								<li class="line">&nbsp;</li>
+								<li class="login"><a href="javascript: alert('To Be Update');">LOGIN</a></li>
+								<li class="sign"><a href="javascript: alert('To Be Update');">SIGN UP</a></li>
+								<li class="line">&nbsp;</li>
+								<li class="lang"><a href="/?lang=ko"><img src="./images/korea2.png" alt=""></a> <a href="/?lang=en"><img src="./images/eng2.png" alt=""></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div id="container">
+				<div class="main1">
+					<div class="video">
+						<video id="movie" autoplay playsinline loop muted poster="./images/poster.jpg">
+							<source src="./images/main_movie.mp4">
+						</video>
+						<div class="bg">
+							<div>
+								<div class="maintxt1 wow fadeInLeft" data-wow-duration="1.5s">
+									<h2 class="textShadow01">COMMA CHAIN</h2>
+									<h3 class="textShadow01">GLOBAL TRANSLATION MESSENGER PLATFORM BASED ON BLOCKCHAIN TECHNOLOGY</h3>
+									<p class="textShadow01">COMMA chain은 새로운 패러다임의 글로벌 번역 메신저 플랫폼 환경을 제공하여 참여자 모두에게 새로운 경험과 다양한 기회, 새로운 수익을 제공하기 위한 프로젝트입니다.</p>
+								</div>
+							</div>
+							<div>
+								<div class="maintxt2 wow fadeInRight" data-wow-duration="1.5s">
+									<p>
+										WALLET<br>
+										DOWNLOAD<br>
+										APP
+									</p>
+									<span>
+										<a href="/lib/comma-qt.exe"><img src="./images/down_web.png" alt=""></a>
+										<a href="javascript: alert('To Be Update');"><img src="./images/down_mobile.png" alt=""></a>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<section class="main2" id="whitepaper">
+					<div>
+						<h4 class="title wow fadeInDown" data-wow-duration=".5s">COMMA BLOCKCHIAN</h4>
+						<p class="subtxt wow fadeInDown" data-wow-duration="1s">새로운 패러다임, 글로벌 전송 메시지 플랫폼</p>
+						<div class="youtube wow fadeIn" data-wow-duration="1.5s" id="movieArea">
+							<div id="movieFrame">
+								<iframe src="https://www.youtube.com/embed/L0uv6r2OCMc?rel=0&amp;showinfo=0" width="100%" frameborder='0' allowfullscreen></iframe>
+							</div>
+							<img src="./images/movie01.jpg" id='movieBtn' />
+						</div>
+					</div>
+				</section>
+				<section class="main3" id="commatalk">
+					<div>
+						<h4 class="title wow fadeInDown" data-wow-duration=".5s">CORE TECHNOLOGY</h4>
+						<p class="subtxt wow fadeInDown" data-wow-duration="1s">COMMA 코인 생태계는 독립적으로 구축된 블록체인메인넷 네트워크를 기반으로 합니다. 주요 레이어는 다음과 같이 구성되어 있으며,<span class='br'>CORE 시스템을 기반으로내부거래소와 토큰서버에서 데이터를 관리하며 WEBAPPLICATION을 통해 통합지갑 및 마스터노드의 서비스를 제공하게 됩니다.</p>
+						<div class="imagebox image_d wow fadeIn" data-wow-duration="1.5s">
+							<img src="./images/main3.png" alt="">
+						</div>
+						<div class="imagebox image_m wow fadeIn" data-wow-duration="2s">
+							<img src="./images/main3_mb.png" alt="">
+						</div>
+					</div>
+				</section>
+				<section class="main4" id="explorer">
+					<div>
+						<div id="ecosystem" class="token_tabs">
+							<h4 class="title wow fadeInDown" data-wow-duration=".5s">TOKEN ECOSYSTEM</h4>
+							<p class="subtxt wow fadeInDown" data-wow-duration="1s">COMMA 플랫폼은 사용자들을 위한 소셜 네트워크,<span class='br'>그리고 사용자 선호사항과 패턴을 사용할 수 있는 고객 맞춤형 컬렉션</p>
+							<div class="imagebox wow fadeIn" data-wow-duration="1.5s">
+								<img src="./images/ecosystem.png" alt="">
+							</div>
+						</div>
+						<div id="flow" class="token_tabs">
+							<h4 class="title wow fadeInDown" data-wow-duration="1.5s">TOKEN FLOW</h4>
+							<h5>CMC &amp; CMP &amp; PAY</h5>
+							<p class="subtxt wow fadeInDown" data-wow-duration="1.5s">COMMA CHAIN은 자체 플랫폼 비즈니스와 블록체인의 연계를 통한 확장 비즈니스 이 두 가지 비즈니스를 원활하게 지원하기 위해서 플랫폼 활동에 따른 보상체계와 결제기능을 제공합니다.<span class='br'>COMMA CHAIN의 토큰 생태계는 생태계의 중추적 역활을 하는 CMC와 서비스에서 보상과 콘텐츠 사용에 필요한 CMP, 외부 제휴사에서 결제기능이 가능한 PAY로 구성되어 있습니다.</p>
+							<div class="imagebox wow fadeIn" data-wow-duration="1.5s">
+								<img src="./images/flow.png" alt="">
+							</div>
+						</div>
+						<div class="token_tab">
+							<ul>
+								<li><a class="on" href="#ecosystem">TOKEN ECOSYSTEM</a></li>
+								<li><a href="#flow">TOKEN FLOW</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="main5" id="service">
+					<div>
+						<h4 class="title wow fadeInDown" data-wow-duration=".5s">SERVICE</h4>
+						<div class="service_tab wow fadeInDown" data-wow-duration="1s">
+							<ul>
+								<li><a href="#mim" class="on">COMMA MESSENGER SERVICE (MIM)</a></li>
+								<li><a href="#ad">COMMA AD SERVICE</a></li>
+								<li><a href="#cmpay">CMPAY SERVICE</a></li>
+							</ul>
+						</div>
+						<div id="mim" class="service_tabs imagebox wow fadeIn" data-wow-duration="1.5s">
+							<span class="desktop"><img src="./images/service1.png" alt=""></span>
+							<span class="mobile"><img src="./images/service1_m.png" alt=""></span>
+						</div>
+						<div id="ad" class="service_tabs imagebox wow fadeIn" data-wow-duration="1.5s">
+							<span class="desktop"><img src="./images/service2.png" alt=""></span>
+							<span class="mobile"><img src="./images/service2_m.png" alt=""></span>
+						</div>
+						<div id="cmpay" class="service_tabs imagebox wow fadeIn" data-wow-duration="1.5s">
+							<span class="desktop"><img src="./images/service3.png" alt=""></span>
+							<span class="mobile"><img src="./images/service3_m.png" alt=""></span>
+						</div>
+					</div>
+				</section>
+				<section class="main6">
+					<div>
+						<h4 class="title wow fadeInDown" data-wow-duration=".5s">ROADMAP</h4>
+						<div class="imagebox wow fadeIn" data-wow-duration="1s">
+							<span class="desktop"><img src="./images/roadmap.png" alt=""></span>
+							<span class="mobile"><img src="./images/roadmap_m.png" alt=""></span>
+						</div>
+					</div>
+				</section>
+				<div id="footer">
+					<div class="footer_txt">
+						<p>Copyright© <strong>2018 MYCOMMA corp.</strong> All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<script>
+		function setMovie(){
+			var area = $("#movieArea img");
+			var _hh = parseFloat(area.height());
+			$("section.main2 .youtube, #movieFrame, #movieFrame iframe").height(_hh);
+		}
 
-                <nav class="gnb_mob">
-                    
-                    <ul class="menu_con">
-                        <li><a  class="aaaaa" href="">회사소개</a></li>
-                        <li><a href="">제품소개</a></li>
-                        <li><a href="">사업소개</a></li>
-                        <li><a href=""><span><img src="images/kor3.png" alt="한국어" title="한국어"></span><span><img src="images/eng3.png" alt="영어" title="영어"></span></a></li>
-                        
-                    </ul>
-                    <div class="menu_toggle">
-                            <div class=""></div>
-                            <div class=""></div>
-                            <div class=""></div>
-                    </div>
+		$(document).ready(function(){
+			$(".lang").hover(
+				function(){$(".lang_sub").stop().slideDown(300)},
+				function(){$(".lang_sub").stop().slideUp(300)}
+			);
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+			});
+			$('#menu-icon2').click(function(){
+				$(this).toggleClass('open');
+			});
 
-                </nav>               
+			$(function(){
+				$('.token_tabs').hide();
+				$('#ecosystem').show();
+				$('.token_tab  li > a').click(function(){
+					$('.token_tab  li > a').removeClass('on');
+					$(this).addClass('on');
+					$('.token_tabs').hide();
+					$($(this).attr('href')).show();
+					return false;
+				});
+			});
 
-            </div>
-            <!-- gnb bar end! .gnb_wrap-->
-        </header>
-        
-        <div class="main_con">
+			$(function(){
+				$('.service_tabs').hide();
+				$('#mim').show();
+				$('.service_tab li > a').click(function(){
+					$('.service_tab li > a').removeClass('on');
+					$(this).addClass('on');
+					$('.service_tabs').hide();
+					$($(this).attr('href')).show();
+					return false;
+				});
+			});
+		});
 
-            <div class="main_text wow bounceInDown" data-wow-duration="1.5s">
-                <img src="images/bg_main_fade1.png" alt="">
-            </div>
+		$(window).load(function(){
+			setMovie();
+		});
 
-            <div class="main_text_m wow bounceInDown" data-wow-duration="1.5s">
-                <img src="images/bg_main_fade_m1.png" alt="">
-            </div>
-            
-        </div>
-        
-        
-        <!-- main end! .mian_con -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>
-        $(document).ready(function(){            
-            $('.show_lang').mouseenter(function(){
-              $('.lang_box').slideDown('fast');            
-            });
-            
-            $('.show_lang').mouseleave(function(){
-              $('.lang_box').slideUp('fast');            
-            });
-
-            
-            $('.menu_toggle').click(function () {
-                $('.menu_con').toggleClass('con_toggle')
-                $('.menu_toggle div').toggleClass('hamburger')
-                
-                
-            });
-            
-            
-           $('[href]').click(function(){
-               alert("준비중입니다.");
-           });       
-        
-            
-            
-
-            $('.under_bar:first-child span').addClass('nav_active');
-                               
-            
-        });
-        </script>     
-    </div>
-    <!-- wrapper end ! #wrapper -->
-</body>
+		$(window).bind("scroll", function(){
+			setMovie();
+			if($(window).scrollTop() > 930){
+				$("#header").addClass("gnb_bg");
+			}else{
+			   $("#header").removeClass("gnb_bg");
+			};
+		});
+		</script>
+	</body>
 </html>

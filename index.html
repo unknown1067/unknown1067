@@ -93,7 +93,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>
         $(document).ready(function(){            
-            $('.show_lang').on("mouseenter keydown", function(){
+            $('.show_lang').on("mouseenter keyup", function(){
               $('.lang_box').slideDown('fast');            
             });
             
@@ -114,7 +114,7 @@
             });
             
             
-           $('[href]').click(function(){
+           $('.under_bar [href]').click(function(){
                alert("준비중입니다.");
            });       
         

@@ -2,21 +2,17 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/default.css" type="text/css">
-    <link rel ="stylesheet" href="css/animate.css" />
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-        var is_mobile = 0;
-    </script>
-    <title>COVACELL</title>
+    <link rel="stylesheet" href="css/swiper.css" type="text/css">
+    <script src="js/swiper.min.js"></script>
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <title>마셔바</title>
 </head>
 <body>
-    <!-- skip menu -->
     <div class="skip">
         <a href="#skip_main">본문 바로가기</a>
         <a href="#skip_menu">메뉴 바로가기</a>
@@ -24,38 +20,47 @@
         
     </div>
 
-
-
-    <div id="wrapper">
-        <h1 class="hidden">COVACELL</h1>
+    <div class="wrapper">
+        
+        <h1 class="hidden">마셔바</h1>
         <header>
-            <div class="gnb_wrap" id="skip_menu">
-                <h2 class="logo"><a href=""><img src="images/logo.png" alt="COVACELL"></a></h2>
-                <nav class="gnb">
-                    <ul>
-                        <li class="under_bar"><a  href="#javascript void(0)">회사소개<span></span></a></li>
-                        <li class="under_bar"><a  href="#javascript void(0)">제품소개<span></span></a></li>
-                        <li class="under_bar"><a  href="#javascript void(0)">사업소개<span></span></a></li>
-                        <li class="show_lang"><a href="#javascript void(0)"><span><img src="images/kor.png" alt="한국어" title="한국어"></span><span> ▼</span></a>
-                            <ul class="lang_box" id="skip_lang">
-                                <li><a href=""><img src="images/kor.png" alt="한국어" title="한국어"></a></li>
-                                <li><a href=""><img src="images/eng.png" alt="영어" title="영어"></a></li>
-                            </ul>
-                        </li>
-                        
-                    </ul>
+            <h2 class="logo"><a href="index.html"><img src="images/logo.png" alt="마셔바"></a></h2>
+            
+            <nav class="gnb_pc">
+                <ul class="nav_menu_pc">
+                    <li class="under_bar"><div></div><a href="#move_sc1">HOME</a></li>
+                    <li class="under_bar"><a href="#move_sc2">INTRODUCE</a></li>
+                    <li class="under_bar"><a href="#move_sc3">VIDEO</a></li>
+                    <li class="under_bar"><a href="#move_sc4">APP</a></li>
+                    <li class="under_bar"><a href="#move_sc5">TOKEN ECOSYSTEM</a></li>
+                    <li class="under_bar"><a href="#move_sc6">ROADMAP</a></li>
+                    <li class="under_bar"><a href="#move_sc7">TEAM</a></li>
+                    <li class="resister_box">
+                        <a href="">LOGIN</a> <span class="ent_bar">&#124;</span> <a href="">SIGNUP</a>
+                    </li>
                     
-                    
-                </nav>
-
-
-                <nav class="gnb_mob">
+                    <li class="show_lang"><a href="#javascript void(0)"><span><img src="images/kor.png" alt="한국어" title="한국어"></span><span> ▼</span></a>
+                        <ul class="lang_box" id="skip_lang">
+                            <li><a href=""><img src="images/kor.png" alt="한국어" title="한국어"></a></li>
+                            <li><a href=""><img src="images/eng.png" alt="영어" title="영어"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="gnb_mob">
                     
                     <ul class="menu_con">
-                        <li><a  class="aaaaa" href="">회사소개</a></li>
-                        <li><a href="">제품소개</a></li>
-                        <li><a href="">사업소개</a></li>
-                        <li><a href=""><span><img src="images/kor3.png" alt="한국어" title="한국어"></span><span><img src="images/eng3.png" alt="영어" title="영어"></span></a></li>
+                        <li><a class="mob_close_anc" href="#move_sc11">HOME</a></li>
+                        <li><a class="mob_close_anc" href="#move_sc22">INTRODUCE</a></li>
+                        <li><a class="mob_close_anc" href="#move_sc3">VIDEO</a></li>
+                        <li><a class="mob_close_anc" href="#move_sc44">APP</a></li>
+                        <li><a class="mob_close_anc" href="#move_sc5">TOKEN ECOSYSTEM</a></li>
+                        <li><a class="mob_close_anc" href="#move_sc6">ROADMAP</a></li>
+                        <li><a class="mob_close_anc" href="#move_sc7">TEAM</a></li>
+                        <li>
+                            <a href=""><img src="images/kor3.png" alt="한국어" title="한국어"></a>
+                            <a href=""><img src="images/eng3.png" alt="영어" title="영어"></a>
+                        </li>
                         
                     </ul>
                     <div class="menu_toggle">
@@ -64,70 +69,576 @@
                             <div class=""></div>
                     </div>
 
-                </nav>               
-
-            </div>
-            <!-- gnb bar end! .gnb_wrap-->
+                </nav>
+            <div class="clear_fix"></div>
+            
         </header>
         
-        <div class="main_con" id="skip_main">
-
-            <div class="main_text wow bounceInDown" data-wow-duration="1.5s">
-                <img src="images/bg_main_fade1.png" alt="">
-            </div>
-
-            <div class="main_text_m wow bounceInDown" data-wow-duration="1.5s">
-                <img src="images/bg_main_fade_m1.png" alt="">
-            </div>
-            
+        <div class="side_left side_pc">
+            <ul>
+                <li><a href="#"><img src="images/ico_tel.png" alt=""></a></li>
+                <li><a href="#"><img src="images/ico_mail.png" alt=""></a></li>
+                <li>&copy;2019.MASHIOBA_</li>
+            </ul>
         </div>
-        <!-- main end! .mian_con -->
-
-        <div class="section" id="skip_section">
-            <div>
-                <a href="">11</a>
-                <a href="">22</a>
-            </div>
+        <div class="side_right side_pc">
+            <ul>
+                <li><a href=""><img src="images/sns_kakao.png" alt=""></a></li>
+                <li><a href=""><img src="images/sns_bing.png" alt=""></a></li>
+                <li><a href=""><img src="images/sns_face.png" alt=""></a></li>
+                <li><a href=""><img src="images/sns_twitter.png" alt=""></a></li>
+            </ul>
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>
-        $(document).ready(function(){            
-            $('.show_lang').on("mouseenter keyup", function(){
-              $('.lang_box').slideDown('fast');            
-            });
-            
-            $('.show_lang').on("mouseleave",function(){
-              $('.lang_box').slideUp('fast');            
-            });
+        <div class="side_left_mo">
+            <ul>
+                <li><a href="#"><img src="images/ico_tel_m.png" alt=""></a></li>
+                <li><a href="#"><img src="images/ico_mail_m.png" alt=""></a></li>
+                <li>&copy;2019.MASHIOBA_</li>
+            </ul>
+        </div>
+        <div class="side_right_mo">
+            <ul>
+                <li><a href=""><img src="images/sns_kakao_m.png" alt=""></a></li>
+                <li><a href=""><img src="images/sns_bing_m.png" alt=""></a></li>
+                <li><a href=""><img src="images/sns_face_m.png" alt=""></a></li>
+                <li><a href=""><img src="images/sns_twitter_m.png" alt=""></a></li>
+            </ul>
+        </div>
 
-            $('.show_lang li:last-child a').blur(function(){
-              $('.lang_box').slideUp('fast');            
-            });
+        <div class="main_area" id="move_sc1">
+            <div class="main_wrap">
+                <div class="main_con">
 
+                </div>
+
+            </div>
+        </div>
+
+        <div class="main_area_mob" >
+            <div class="main_wrap_mob" id="move_sc11">
+
+            </div>
+        </div>
+        <!-- main end ! .main_area -->
+
+        <section class="section_intro" id="move_sc2">
+            <div class="intro_wrap">
+                <div class="intro_text">
+                    <h2>마셔바는 어떤 서비스인가요?</h2>
+                    <h3>마셔바는 블록체인과 결합된  차세대 건강관리 플랫폼입니다.</h3>
+                    <p>
+                        헬스케어 영역의 물마시기 서비스를 바탕으로, 스마트폰, 웨어러블기기 등의 모바일 기기들을<br class="remove_br"/>
+                        통해 발전하는 헬스케어 기술융합시장에서 개개인의 건강을 중시하고 관리하려는 수요에<br class="remove_br"/>
+                        의해 개발된 어플리케이션입니다. 마셔바는 블록체인 기술을 도입하여, 자체 토큰(MSB)을<br class="remove_br"/>
+                        서비스 내에서 활용합니다.
+                    </p>
+                </div>
+                <div class="intro_img">
+                    <img src="images/intro_img.png" alt="">
+                </div>
+            </div>    
+        </section>
+        <section class="section_intro_mob" id="move_sc22">
+            <div class="intro_wrap">
+                <h2>마셔바는<br/>
+                    어떤 서비스인가요?
+                </h2>
+                <h3>마셔바는 블록체인과 결합된 차세대 건강관리 플랫폼입니다.</h3>
+                <p>
+                    헬스케어 영역의 물마시기 서비스를 바탕으로, 스마트폰, 웨어러블기기 등의 모바일 기기들을
+                    통해 발전하는 헬스케어 기술융합시장에서 개개인의 건강을 중시하고 관리하려는 수요에
+                    의해 개발된 어플리케이션입니다. 마셔바는 블록체인 기술을 도입하여, 자체 토큰(MSB)을
+                    서비스 내에서 활용합니다.
+                </p>
+            </div>
+        </section>
+        <!-- intro end ! .section_intro -->
+
+        <section class="section_video" id="move_sc3">
+            <div class="video_wrap">
+                
+                <div class="video_box">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3mvBen3rPko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>    
+        </section>
+        <!-- video end ! .section_video -->
+
+        <section class="section_visual" id="move_sc4">
+            <div class="visual_wrap">
+                <div class="slide_box">
+                        
+                    <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slide_text">
+                                        <div class="text_pos">
+                                            <h2>마셔바는 블록체인과 결합된<br/>
+                                                차세대 건강관리 플랫폼입니다.
+                                            </h2>
+                                        
+                                            <p>
+                                                애플리케이션 메인화면에서 마셔바 캐릭터 &lsquo;푸시(PUSH)&rsquo;를 <br class="remove_br"/>
+                                                활용하여 직관적으로 실시간 미세먼지를 확인할 수 있습니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slide_img">
+                                        <img src="images/slide_1.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    
+                                    <div class="slide_text">
+                                        <div class="text_pos">
+                                            <h2>마셔바에서 알람을 통해<br/>
+                                                건강한 물마시기 습관을 만드세요
+                                            </h2>
+                                        
+                                            <p>
+                                                건강한 물 마시기 알람 특성에 맞게 시간에 맞춰 물 마실 시각을 <br class="remove_br"/>
+                                                알려주는 일반 알람과 특정 시간이나 일정에 맞춰 울려주는 스케줄 알람 <br class="remove_br"/>
+                                                기능이 있습니다.
+                                            </p>
+                                        </div>
+                                    </div>    
+                                    <div class="slide_img">
+                                        <img src="images/slide_2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide_text">
+                                        <div class="text_pos">
+                                            <h2>마셔바에서 의미있는<br/>
+                                                기부를 쉽게 진행하세요
+                                            </h2>
+                                        
+                                            <p>
+                                                마셔바 내에서 공론화 된 현실의 사회 문제에 대하여, 실질적인 도움이 <br class="remove_br"/>
+                                                되는 기부 기능을 통해 유저들에게 기부에 대해 친숙한 문화를 양성해 <br class="remove_br"/>
+                                                낼 수 있습니다. 이를 바탕으로 마셔바에서는 직관적이고 현실적이며 <br class="remove_br"/>
+                                                청렴한 기부 문화를 정착시킬 수 있도록 합니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slide_img">
+                                        <img src="images/slide_3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide_text">
+                                        <div class="text_pos">
+                                            <h2>마셔바에서 토큰을 이용해<br/>
+                                                다양한 상품을 구매하세요
+                                            </h2>
+                                        
+                                            <p>
+                                                마셔바에서는 사용자들이 모은 아보로 앱 내 스토어를 통해 다양한 <br class="remove_br"/>
+                                                제품의 구매가 가능합니다. 이 뿐 아니라 &lt;클럽 스토어&gt;처럼 <br class="remove_br"/>
+                                                공고즈의 특성에 맞게 스토어 컬러를 지정하여 사용자의 시선을 <br class="remove_br"/>
+                                                사로잡는 등의 커스터마이징이 가능합니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slide_img">
+                                        <img src="images/slide_4.png" alt="">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- swiper_wrapper end !  -->
+
+
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                
+                </div>
+            </div>
+            <!-- visual_wrap end ! .visual_wrap     -->
+        </section>
+        <!-- sldie visual end ! .section_visual -->
+       
+        <section class="section_visual_mob" id="move_sc44">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide_text">
+                            <div class="text_pos">
+                                <h2>마셔바는 블록체인과 결합된<br/>
+                                    차세대 건강관리 플랫폼입니다.
+                                </h2>
+                            
+                                <p>
+                                    애플리케이션 메인화면에서 마셔바 캐릭터 &lsquo;푸시(PUSH)&rsquo;를 <br class="remove_br"/>
+                                    활용하여 직관적으로 실시간 미세먼지를 확인할 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide_img">
+                            <img src="images/slide_m1.png" alt="">
+                        </div>
+                    </div>
+                
+                    <div class="swiper-slide">
+                        
+                        <div class="slide_text">
+                            <div class="text_pos">
+                                <h2>마셔바에서 알람을 통해<br/>
+                                    건강한 물마시기 습관을 만드세요
+                                </h2>
+                            
+                                <p>
+                                    건강한 물 마시기 알람 특성에 맞게 시간에 맞춰 물 마실 시각을 <br class="remove_br"/>
+                                    알려주는 일반 알람과 특정 시간이나 일정에 맞춰 울려주는 스케줄 알람 <br class="remove_br"/>
+                                    기능이 있습니다.
+                                </p>
+                            </div>
+                        </div>    
+                        <div class="slide_img">
+                            <img src="images/slide_m2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_text">
+                            <div class="text_pos">
+                                <h2>마셔바에서 의미있는<br/>
+                                    기부를 쉽게 진행하세요
+                                </h2>
+                            
+                                <p>
+                                    마셔바 내에서 공론화 된 현실의 사회 문제에 대하여, 실질적인 도움이 <br class="remove_br"/>
+                                    되는 기부 기능을 통해 유저들에게 기부에 대해 친숙한 문화를 양성해 <br class="remove_br"/>
+                                    낼 수 있습니다. 이를 바탕으로 마셔바에서는 직관적이고 현실적이며 <br class="remove_br"/>
+                                    청렴한 기부 문화를 정착시킬 수 있도록 합니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide_img">
+                            <img src="images/slide_m3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_text">
+                            <div class="text_pos">
+                                <h2>마셔바에서 토큰을 이용해<br/>
+                                    다양한 상품을 구매하세요
+                                </h2>
+                            
+                                <p>
+                                    마셔바에서는 사용자들이 모은 아보로 앱 내 스토어를 통해 다양한 <br class="remove_br"/>
+                                    제품의 구매가 가능합니다. 이 뿐 아니라 &lt;클럽 스토어&gt;처럼 <br class="remove_br"/>
+                                    공고즈의 특성에 맞게 스토어 컬러를 지정하여 사용자의 시선을 <br class="remove_br"/>
+                                    사로잡는 등의 커스터마이징이 가능합니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide_img">
+                            <img src="images/slide_m4.png" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- swiper_wrapper end !  -->
             
-            $('.menu_toggle').click(function () {
-                $('.menu_con').toggleClass('con_toggle')
-                $('.menu_toggle div').toggleClass('hamburger')
+            
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                    
+                    
+                    
                 
                 
-            });
-            
-            
-           $('.under_bar [href]').click(function(){
-               alert("준비중입니다.");
-           });       
+                </div>
+                <!-- swiper container -->
+            </section>
+            <!-- mob -->
+
+
+
+
+
         
-            
-            
 
-            $('.under_bar:first-child span').addClass('nav_active');
+        <section class="section_systab" id="move_sc5">
+            <div class="systab_wrap">
+                <div class="tab_menu">
+                    <ul class="tabs">
+                        <li data-list="tab1" class="list1">TOKEN ECOSYSTEM</li>
+                        <li data-list="tab2" class="list2">SERVICE FLOW</li>
+                    </ul>
+                </div>
+                
+                <div class="tab_content">
+                    <div class="systab_con tab1">
+                        <div class="tab_text">
+                            <h2>TOKEN ECOSYSTEM</h2>
+                            <p>
+                                MASHIOBA TOKEN FLOW는 유저의 플랫폼 유입경로와 사용경로 이렇게 둘로 나눌 수 있습니다.<br/>
+                                마셔바의 서비스를 이용하기 위해서 유저는 우선 외부거래소를 통해 MSB를 구매하고, 마셔바의 <br class="remove_br"/>
+                                내부거래소를 통해 MSB를 스테이블 코인인 AVO로 전환합니다. 유저는 전환된 AVO를 활용 하여 <br class="remove_br"/>
+                                서비스내에서 결제,지급,후원,보상 등 여러가지의 형태로 사용할 수 있습니다. 유저가 보유한 <br class="remove_br"/>
+                                AVO를 현금화 하기 위해선 반대의 프로세스를 통해 MSB로 전환 후 외부거래소에서 현금화 할 수 <br class="remove_br"/>
+                                있습니다. 확장된 서비스를 통해 유저 유입이 증가하게 되면, MSB의 수요가 증가하고 이는 <br class="remove_br"/>
+                                전체 생태계 가치상승에 기여하게 됩니다.
+                            </p>
+                        </div>
+                        <div class="tab_img">
+                            <img src="images/systab1_img1.png" alt="">
+                        </div>
+                    
+                    </div>
+                    <div class="systab_con tab2">
+                        <div class="tab_text">
+                            <h2>SERVICE FLOW</h2>
+                            <p>
+                                마셔바 서비스의 유저는 초기 미세먼지,물 마시기 등 개인 피트니스 관리를 위한 니즈를 통해 <br class="remove_br"/>
+                                서비스에 유입됩니다. 이후 마셔바가 제공하는 알림 서비스 및 각종 정보를 통해 사용자는 앱에서 <br class="remove_br"/>
+                                각정 건강관리에 유익한 정보를 얻을 수 있게 됩니다. 사용자의 체류가 길어지며,광고 소비를 통해 <br class="remove_br"/>
+                                AVO를 발행하게 되며 발행된 AVO는 마셔바 자체 몰인 마셔바몰과 기부,커뮤니티를 통해 수요를 <br class="remove_br"/>
+                                발생시킬 수 있습니다. 늘어난 AVO의 수요는 퍼블릭 블록체인을 통해 발행되는 MSB로 전환할 수 <br class="remove_br"/>
+                                있으며, 수요의 증가는 추후 MSB를 구매해서 AVO를 소모하게 되는 요인으로 작용합니다.
+                            </p>
+                        </div>
+                        <div class="tab_img">
+                            <img src="images/systab2_img1.png" alt="">
+                        </div>
+                    
+                    </div>
+                </div>
+                <!-- .tab_content -->
+            </div> 
+            <!-- systab_wrap end ! .systab_wrap -->
+        </section>
+        <!-- system tab end ! .section_systab -->
+
+        <section class="section_roadmap" id="move_sc6">
+            <div class="roadmap_wrap">
+                <div class="roadmap_con">
+                    
+                </div>
+                
+                <div class="roadmap_con_m" id="move_sc6">
+                    <img src="images/roadmap_m.png" alt="">
+                </div>
+
+            </div>
+        </section>
+        <!-- roadmap end ! .section_roadmap -->
+
+        <section class="section_members" id="move_sc7">
+            <div class="members_wrap">
+                <div class="members_con">
+                    
+                        <figure>
+                            <img src="images/member1.png" alt="">
+                            <figcaption>
+                                <span>Ju Yen Won</span>
+                                <span>CEO</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="images/member2.png" alt="">
+                            <figcaption>
+                                <span>Jimmy Park</span>
+                                <span>Planning&amp;Strategy Team</span>
+                                <span>-</span>
+                                <span>Arab Reginal Youth</span>
+                                <span>Promotion Leader</span>
+                                <span>&amp;Supporters Manager,</span>
+                                <span>25th WSJ Bid office</span>
+                            </figcaption>
+                        </figure>
+                        
+                        <figure>
+                            <img src="images/member3.png" alt="">
+                            <figcaption>
+                                <span>Soon Hee Koo</span>
+                                <span>Planning&amp;Strategy Team</span>
+                                <span>-</span>
+                                <span>Planning&amp;D3 Mananging,</span>
+                                <span>훈민정음(CHN-KOR)</span>
+                                <span>Mobile Keyboard</span>
+                            </figcaption>
+
+                        </figure>
+                        
+                        <figure>
+                            <img src="images/member4.png" alt="">
+                            <figcaption>
+                                <span>Chansik Yoon</span>
+                                <span>Development Team</span>
+                                <span>-</span>
+                                <span>S/W Full-time Instructor,</span>
+                                <span>LG Electronics</span>
+                                
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="images/member5.png" alt="">
+                            <figcaption>
+                                <span>So Hee Kim</span>
+                                <span>Development Team</span>
+                                <span>-</span>
+                                <span>Cornerstone Apparel,</span>
+                                <span>INC.Web dept.</span>
+                                <span>E-commerce and Merchanding</span>
+                                <span>&#40;LA,California,USA&#41;</span>
+                                
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="images/member6.png" alt="">
+                            <figcaption>
+                                <span>Kyeong Mo Sung</span>
+                                <span>Development Team</span>
+                                <span>-</span>
+                                <span>Development &amp; Maintenance team,</span>
+                                <span>SHP : Shilla-hotels Health Care APP</span>                                
+                            </figcaption>
+                        </figure>
+                        
+                        <figure>
+                            <img src="images/member7.png" alt="">
+                            <figcaption>
+                                <span>Choi Hong Won</span>
+                                <span>Marketing Strategy Team</span>
+                                <span>-</span>
+                                <span>PM, Internet Dept, KBS</span>
+                                <span>PM, Sponership Dept.</span>
+                                <span>서울경제TV</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="images/member8.png" alt="">
+                            <figcaption>
+                                <span>Hwang Si Yoon</span>
+                                <span>Marketing Strategy Team</span>
+                                <span>-</span>
+                                <span>CEO, Focus Communication</span>
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="images/member9.png" alt="">
+                            <figcaption>
+                                <span>Hwang Si Yoon</span>
+                                <span>Marketing Strategy Team</span>
+                                <span>-</span>
+                                <span>CEO, Focus Communication</span>
+                            </figcaption>
+                        </figure>
+                    
+                </div>
+                <!-- .members_con  -->
+            </div>
+            <!-- .members_wrap -->
+        </section>
+        <!-- members end ! .section_members -->
+
+        
+        <script>
+            $(document).ready(function(){            
+                // nav lang - on/off
+                $('.show_lang').on("mouseenter keyup", function(){
+                  $('.lang_box').slideDown('fast');            
+                });
+                
+                $('.show_lang').on("mouseleave",function(){
+                  $('.lang_box').slideUp('fast');            
+                });
+    
+                $('.show_lang li:last-child a').blur(function(){
+                  $('.lang_box').slideUp('fast');            
+                });
+    
+                
+                // nav hamburger menu toggle 
+                $('.menu_toggle').click(function () {
+                    $('.menu_con').toggleClass('con_toggle')
+                    $('.menu_toggle div').toggleClass('hamburger')
+                    
+                    
+                });
+                
             
-                               
-            
-        });
-        </script>     
+                
+                
+    
+                $('.under_bar div').addClass('active_bar');
+                $('.under_bar a').click(function(){
+                    $('.under_bar div').removeClass('active_bar');
+                   
+                });
+                
+                // visual slide
+                var swiper = new Swiper('.swiper-container', {
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                    
+                    autoplay: {
+                      delay: 7000,
+                      disableOnInteraction: false,
+                    },
+                    keyboard: {
+                      enabled: true,
+                    },
+                    pagination: {
+                      el: '.swiper-pagination',
+                      clickable: true,
+                    },
+                    navigation: {
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev',
+                    },
+                });
+
+                // system tab
+                $('.tab_content .systab_con').hide();
+                $('.tab_content .systab_con:first-child').show();
+                $('.tabs li:first-child').addClass('systab_active').css('color','#1498f5');
+
+                $('.tabs li').click(function(){
+                    $('.tabs li').removeClass("systab_active").css('color','#fff');
+                    $(this).addClass("systab_active").css('color','#1498f5');                                 
+                
+                    var current_tab_value = $(this).attr('data-list');
+                    $('.tab_content .systab_con').hide('fast');
+                    $('.'+ current_tab_value).show('fast');
+
+                    return false;
+                });
+
+                // function fnMove(seq){
+                // var offset = $("section" + seq).offset();
+                // $('html, body').animate({scrollTop : offset.top}, 400);
+                // }  
+
+                var scroll = new SmoothScroll('a[href*="#"]');
+                var scroll = new SmoothScroll('a[href*="#"]', {
+                	speed: 50
+                });
+                
+                $('.mob_close_anc').click(function(){
+                    $('.gnb_mob .menu_con').toggleClass('con_toggle');
+                    $('.menu_toggle div').toggleClass('hamburger')
+                })
+
+
+            });
+            </script>     
     </div>
-    <!-- wrapper end ! #wrapper -->
+    <!-- wrapper end! .wrapper -->
+
 </body>
 </html>

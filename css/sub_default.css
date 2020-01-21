@@ -1,0 +1,87 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css');
+
+
+body{width:100%;font-size:16px}
+
+.skip > a{position:absolute;top:-500px;left:0;font-size:20px;background:#333;color:#fff;text-align:center;padding:45px 70px;width:100%}
+.skip > a:focus{top:0;left:0;z-index:99999;color:#fff}
+.hidden{text-indent:-9999px}
+.wrapper{width:100%;height:100vh;max-width:1920px;margin:0 auto;font-family:'Noto Sans KR', sans-serif;font-size:16px;color:#2e2e2e;font-weight:400;font-size:100%;font-stretch: 100%;position:relative}
+.mark_sky{background:#8bd3da}
+
+/* ============================================================================
+   side_icon
+============================================================================ */
+.wrapper .side_right{position:fixed;top:52.9%;right:2.45%;z-index:40000}
+.wrapper .side_right li:nth-child(2){margin:20px 0}
+.side_right ul li{width:49px;height:auto;}
+.side_right ul > .onon,.side_right ul > .onon a {transition:all .35s}
+.side_right ul > .onon  > a .feed_on{display:none}
+
+
+/* ============================================================================
+    header_area
+============================================================================ */
+.wrapper{height:auto;max-width:1920px}
+.wrapper header{width:100%;display:flex;position:relative;position:fixed;top:0;z-index:50000;transition:all ease-in .15s;overflow:hidden;height:110px;max-width:1920px}
+.wrapper header .logo{display:flex;padding-left:50px;display:inline-block;height:110px}
+.wrapper header .logo > a{display:block; padding:40px 0}
+.wrapper header .logo a > .after_logo{display:none}
+.wrapper header .gnb_pc{display:flex;justify-content:flex-end;padding-right:27px;height:110px;width:100%}
+.wrapper header .gnb_pc > ul{display:flex;height:110px}
+.wrapper header .gnb_pc > ul > li{height:110px}
+.wrapper header .gnb_pc > ul > li > a{font-size:24px;padding:43px 20px;color:#000;font-weight:400;position:relative;display:block;}
+.wrapper header .gnb_pc > ul > li > a:hover{color:#8bd3da}
+
+.wrapper header .gnb_pc > ul > .active_on > a::after{content:""; width:0;position:absolute;bottom:0;left:50%;transform:translateX(-50%);height:3px;background:#8bd3da;transition:all .35s}
+.wrapper header .gnb_pc > ul > .active_on > a:hover::after{width:50%}
+.wrapper header .gnb_pc > ul > li:last-child > a{font-size:11px;text-align: right;display:inline-block;color:#b0468e}
+.wrapper header .gnb_pc > ul > li:last-child > a:hover{color:#b0468e}
+
+.wrapper .header_on{background:rgba(0,0,0, .8)}
+.wrapper .header_on .logo a > .before_logo{display:none}
+.wrapper .header_on .logo a > .after_logo{display:block}
+.wrapper .header_on nav > ul > li a{color:#fff}
+.wrapper .header_on nav > ul > li a:hover{color:#8bd3da}
+.wrapper .header_on nav > ul > li:last-child a{color:#8bd3da}
+
+.submenu_area {width:100%;display:inline-block;position:absolute;left:0;border-top:1px solid #666}
+.submenu_area > ul {display:none;float:right;margin-right:27px}
+
+.submenu_area > ul > li {display:inline-block}
+.submenu_area > ul > li > a{display:inline-block;color:#fff;padding:28px 14px}
+.wrapper header .gnb_pc > ul > li > a:hover ~ .submenu_area{display:block}
+.submenu .submenu_area ul{display:block}
+
+
+
+/* ============================================================================
+    footer
+============================================================================ */
+.wrapper .footer{width:100%;max-width:1500px;padding:50px 0;margin:auto;font-size:14px;font-weight:500;border-top:1px solid;clear:both;}
+.wrapper .footer .foot_left{float:left;width:70%}
+.wrapper .footer .foot_left .sns_box > p{display:inline-block}
+.wrapper .footer .foot_left .sns_box > p a span img{margin:0 5px 0 0;vertical-align:-2px}
+.wrapper .footer .foot_left .sns_box .sns_yk{margin:0 0 0 26px}
+.wrapper .footer .foot_left address{padding:14px 0 38px}
+.wrapper .footer .foot_strong{font-weight:900}
+.wrapper .footer .foot_left address p {display:inline-block}
+.wrapper .footer .foot_left address p:last-child > a{color:#464646;font-weight:bold}
+.wrapper .footer .foot_right{float:right;width:30%}
+.wrapper .footer .foot_right p{text-align:right}
+.wrapper .footer .foot_right p:nth-child(2){margin-top:18px}
+.wrapper .footer .foot_copy{clear:both;color:#595959;font-size:14px}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+
+}

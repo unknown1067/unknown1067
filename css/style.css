@@ -284,13 +284,9 @@ body{width:100%;font-size:1em}
 
 @media screen and (max-width:1540px){
     .side_right{width:100px;height:400px;}
-    .side_hold{position:fixed;top:15%;}
     .side_right>div{width:100%;clear:both}
-    .side_right>div a,.side_right>div a img{display:block;}
-    .side_right .ico_box1{background:#39a536;}
-    .side_right .ico_box2{background:#ed7100;}
-    .side_right .ico_box3{background:#3f9183;}
-    .side_right .ico_box4{}
+
+
 }
 
 @media screen and (max-width:1340px){

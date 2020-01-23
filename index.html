@@ -2572,6 +2572,21 @@
 
     <script>
     $(document).ready(function(){
+        var wrapper_width = $('.wrapper').css('width').replace("px","");
+        var wrap_width = $('.visual_wrap').css('width').replace("px","");
+        var side_left = $('.side_right').css({left:wrapper_width/2+wrap_width/2+30+"px"});
+        $('.side_right').css("left","side_left")
+        $(window).resize(function(){
+            var wrapper_width = $('.wrapper').css('width').replace("px","");
+            var wrap_width = $('.visual_wrap').css('width').replace("px","");
+            var side_left = $('.side_right').css({left:wrapper_width/2+wrap_width/2+30+"px"});
+            $('.side_right').css({left:wrapper_width/2+wrap_width/2+30+"px"});
+        });
+
+
+
+
+
         $('.search_area ul li:first-child').addClass('on');
         $('.search_area ul li > a').click(function(e){
             e.preventDefault();
@@ -2600,7 +2615,7 @@
         });
 
         $(window).scroll(function(){
-            if($(this).scrollTop() > 365){
+            if($(this).scrollTop() > 462){
                 $('.side_right').addClass('side_hold');
             }else{
                 $('.side_right').removeClass('side_hold');
